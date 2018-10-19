@@ -1,0 +1,11 @@
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/mdb.min.js"></script>
+<script src="../assets/js/all.js"></script>
+<script src="../assets/datatables/js/jquery.dataTables.min.js"></script>
+<script src="../assets/datatables/js/dataTables.bootstrap4.min.js"></script>
+<script src="../assets/autocomplete/auto-complete.min.js"></script>
+<script src="../assets/js/accounting.min.js"></script>
+<script src="../assets/toastr/toastr.min.js"></script>
+<script src="../assets/js/custom.js"></script>
