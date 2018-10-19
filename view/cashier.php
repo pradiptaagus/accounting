@@ -55,7 +55,7 @@
 					<div class="card">
 						<div class="card-body">
 							<h3 class="text-center">Pembayaran</h3>
-							<div class="d-flex justify-content-between my-3">
+							<div class="d-flex justify-content-between">
 								<button class="btn btn-primary btn-sm float-left" data-toggle="modal" data-target="#search-user-modal"><i class="fa fa-search"></i></button>
 								<button class="btn btn-secondary btn-sm d-inline float-right"><i class="fa fa-user-plus"></i></button>							
 							</div>

@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ml-auto mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="#">Kasir</a>
+                <a class="nav-link" href="cashier.php">Kasir</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
@@ -38,7 +38,7 @@
                   aria-expanded="false"><?php echo $_SESSION['username'] ?></a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#">Profil</a>
-                    <a class="dropdown-item" href="#">Keluar</a>
+                    <a class="dropdown-item" href="../controller/logout.php">Keluar</a>
                 </div>
             </li>
         </ul>

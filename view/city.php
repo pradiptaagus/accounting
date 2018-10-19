@@ -25,7 +25,7 @@
     <div class="container-fluid">
         <h3 class="mt-3">Master Kota</h3>
         <div class="mb-3 mt-4">
-            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#add-modal"><i class="fa fa-plus mr-2"></i>Tambah Kota</button>
+            <button class="btn btn-primary ml-0" data-toggle="modal" data-target="#add-modal"><i class="fa fa-plus mr-2"></i>Tambah Kota</button>
         </div>
         <div class="table-responsive">
             <table id="table" class="table table-bordered table-striped">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-mdb-color" data-dismiss="modal">Batal</button>
                     <button type="button" id="add" class="btn btn-primary">Simpan</button>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-mdb-color" data-dismiss="modal">Batal</button>
                     <button type="button" id="edit" class="btn btn-primary">Simpan</button>
                 </div>
             </div>
@@ -148,7 +148,7 @@
                     </table>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-mdb-color" data-dismiss="modal">Batal</button>
                     <button type="button" id="delete" class="btn btn-danger">Hapus</button>
                 </div>
             </div>

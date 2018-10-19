@@ -69,7 +69,7 @@
 	  	  	  	  	</div>
 	  	  	  	</div>	  	  	  	
 	  	  	  	<div class="modal-footer">
-	  	  	  	  	<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Batal</button>
+	  	  	  	  	<button type="button" class="btn btn-mdb-color btn-sm" data-dismiss="modal">Batal</button>
 	  	  	  	  	<button type="button" id="add" class="btn btn-primary btn-sm">Simpan</button>
 	  	  	  	</div>
 	  	  	</div>
@@ -100,7 +100,7 @@
 		  	  	  	</div>
 	  	  	  	</div>
 	  	  	  	<div class="modal-footer">
-	  	  	  	  	<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Batal</button>
+	  	  	  	  	<button type="button" class="btn btn-mdb-color btn-sm" data-dismiss="modal">Batal</button>
 	  	  	  	  	<button type="button" id="edit" class="btn btn-primary btn-sm">Simpan</button>
 	  	  	  	</div>
 	  	  	</div>
@@ -134,7 +134,7 @@
 	  	  	  		</table>
 	  	  	  	</div>
 	  	  	  	<div class="modal-footer">
-	  	  	  	  	<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Batal</button>
+	  	  	  	  	<button type="button" class="btn btn-mdb-color btn-sm" data-dismiss="modal">Batal</button>
 	  	  	  	  	<button type="button" id="delete" class="btn btn-danger btn-sm">Hapus</button>
 	  	  	  	</div>
 	  	  	</div>
@@ -169,7 +169,9 @@
 					$('#table-content').html(row)
 					$('#table').DataTable({
 						"columnDefs": [
-							{"width": "4%", "targets": 0}
+							{"width": "4%", "targets": 0},
+							{"width": "10%", "targets": 1},
+							{"width": "15%", "targets": 3}
 						]
 					});
 				},

@@ -181,7 +181,7 @@
 					<small>( <span class="text-danger">*</span> ) <i>Harus diisi</i></small>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Batal</button>
+					<button type="button" class="btn btn-mdb-color btn-sm" data-dismiss="modal">Batal</button>
 					<button type="button" id="add" class="btn btn-primary btn-sm">Simpan</button>
 				</div>
 			</div>
@@ -325,7 +325,7 @@
 					<small>( <span class="text-danger">*</span> ) <i>Harus diisi</i></small>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Batal</button>
+					<button type="button" class="btn btn-mdb-color btn-sm" data-dismiss="modal">Batal</button>
 					<button type="button" id="edit" class="btn btn-primary btn-sm">Simpan</button>
 				</div>
 			</div>
@@ -364,7 +364,7 @@
 					</table>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+					<button type="button" class="btn btn-mdb-color" data-dismiss="modal">Batal</button>
 					<button type="button" id="delete" class="btn btn-danger">Hapus</button>
 				</div>
 			</div>
