@@ -1,7 +1,7 @@
 import pymysql
 import random
 
-db = pymysql.connect("localhost", "root", "", "db_project")
+db = pymysql.connect("localhost", "root", "", "source")
 cur = db.cursor()
 
 status = [
@@ -14,6 +14,11 @@ status = [
 	"PO sedang dicek",
 	"DO ditolak"
 ]
+
+# truncate tabel tb_status
+sql = "TRUNCATE tb_status;"
+cur.execute(sql)
+db.commit()
 
 for i in range(len(status)):
 	# get propinsi name from array

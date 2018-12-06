@@ -1,7 +1,7 @@
 import pymysql
 import random
 
-db = pymysql.connect("localhost", "root", "", "db_project")
+db = pymysql.connect("localhost", "root", "", "source")
 cur = db.cursor()
 
 satuan = {
@@ -28,6 +28,11 @@ satuan = {
 	"set": "Set",
 	"tabung": "Tabung"
 }
+
+# truncate table tb_satuan
+sql = "TRUNCATE tb_satuan;"
+cur.execute(sql)
+db.commit()
 
 for i, j in satuan.items():
 	# get propinsi name from array

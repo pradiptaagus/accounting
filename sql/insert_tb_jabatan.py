@@ -1,8 +1,8 @@
 import pymysql
 import random
 
-db = pymysql.connect("localhost", "root", "", "db_project")
-cur = db.cursor();
+db = pymysql.connect("localhost", "root", "", "source")
+cur = db.cursor()
 
 jabatan = [
 	['Kasir', 'Kasir'],
@@ -10,6 +10,11 @@ jabatan = [
 	['Kebersihan', 'Pegawai kebersihan'],
 	['Manager', 'Manager']
 ]
+
+# truncate table tb_jabatan before insert
+sql = "TRUNCATE tb_jabatan;"
+cur.execute(sql)
+db.commit()
 
 for i in range(len(jabatan)):
 	nama = str(jabatan[i][0])

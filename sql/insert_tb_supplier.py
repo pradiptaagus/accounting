@@ -1,8 +1,13 @@
 import pymysql
 import random
 
-db = pymysql.connect("localhost", "root", "", "db_project")
+db = pymysql.connect("localhost", "root", "", "source")
 cur = db.cursor()
+
+# truncate table before insert
+sql = "TRUNCATE tb_barang;"
+cur.execute(sql)
+db.commit()
 
 for i in range(1, 101):
 	nama = "SUPPLIER_" + str(i)

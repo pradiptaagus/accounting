@@ -1,7 +1,7 @@
 import pymysql
 import random
 
-db = pymysql.connect("localhost", "root", "", "db_project")
+db = pymysql.connect("localhost", "root", "", "source")
 cur = db.cursor()
 
 kategori = [
@@ -17,6 +17,11 @@ kategori = [
 	"Kebutuhn Kebersihan",
 	"Elektronik"
 ]
+
+# truncate table tb_kategori before insert
+sql = "TRUNCATE tb_kategori;"
+cur.execute(sql)
+db.commit()
 
 for i in range(len(kategori)):
 	# get propinsi name from array

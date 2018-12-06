@@ -1,7 +1,7 @@
 import pymysql
 import random
 
-db = pymysql.connect("localhost", "root", "", "db_project")
+db = pymysql.connect("localhost", "root", "", "source")
 cur = db.cursor()
 
 kota = [
@@ -15,6 +15,11 @@ kota = [
 	"Kabupaten Tabanan",
 	"Kabupaten Denpasar"
 ]
+
+# truncate table tb_kota
+sql = "TRUNCATE tb_kota;"
+cur.execute(sql)
+db.commit()
 
 for i in range(len(kota)):
 	# get propinsi name from array

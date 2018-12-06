@@ -1,7 +1,7 @@
 import pymysql
 import random
 
-db = pymysql.connect("localhost", "root", "", "db_project")
+db = pymysql.connect("localhost", "root", "", "source")
 cur = db.cursor()
 
 barang = [
@@ -45,9 +45,14 @@ barang = [
 	["Kado", "9", "30000", "1", "25000"],
 	["Sapu", "10", "15000", "1", "10000"],
 	["Kain Pel", "10", "8000", "1", "7000"],
-	["Cairan Pel Pembersih", "10", "11000", "4", "10000"],
+	["Wipol", "10", "11000", "4", "10000"],
 	["Baterai ABC (per pasang)", "11", "4000", "19", "3500"]
 ]
+
+# truncate table tb_barang before insert
+sql = "TRUNCATE tb_barang;"
+cur.execute(sql)
+db.commit()
 
 for i in range(len(barang)):
 	# get propinsi name from array
@@ -62,6 +67,6 @@ for i in range(len(barang)):
 	pajak = 0
 	id_supplier = int(random.randint(1, 100))
 
-	sql = "INSERT INTO tb_barang(kode, nama, id_kategori, harga_jual, stok, diskon, id_satuan, harga_beli, pajak, id_supplier, created_date, updated_date) VALUES('%s', '%s', %s, %s, %s, %s, %s, %s, %s, %s, NOW(), NOW());" %(kode, nama, kategori, harga_jual, stok, diskon, id_satuan, harga_beli, pajak, id_supplier)
+	sql = "INSERT INTO tb_barang(kode, nama, id_kategori, harga_jual, stok, diskon, id_satuan, harga_beli, pajak, id_supplier, created_at, updated_at) VALUES('%s', '%s', %s, %s, %s, %s, %s, %s, %s, %s, NOW(), NOW());" %(kode, nama, kategori, harga_jual, stok, diskon, id_satuan, harga_beli, pajak, id_supplier)
 	cur.execute(sql)
 	db.commit()

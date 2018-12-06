@@ -1,8 +1,13 @@
 import pymysql
 import random
 
-db = pymysql.connect("localhost", "root", "", "db_project")
+db = pymysql.connect("localhost", "root", "", "source")
 cur = db.cursor()
+
+# truncate table tb_pelanggan before insert
+sql = "TRUNCATE tb_pelanggan;"
+cur.execute(sql)
+db.commit()
 
 for i in range(1, 1001):
 	name = "customer" + str(i)

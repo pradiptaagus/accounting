@@ -1,7 +1,7 @@
 import pymysql
 import random
 
-db = pymysql.connect("localhost", "root", "", "db_project")
+db = pymysql.connect("localhost", "root", "", "source")
 cur = db.cursor()
 
 propinsi = [
@@ -41,10 +41,15 @@ propinsi = [
 	"Papua"
 ]
 
+# truncate table tb_propinsi
+sql = "INSERT table tb_propinsi;"
+cur.execute(sql)
+db.commit()
+
 for i in range(len(propinsi)):
 	# get propinsi name from array
 	nama = propinsi[i]
 
-	sql = "INSERT INTO tb_propinsi(nama, negara) VALUES('%s', %s);" %(nama, "1")
+	sql = "INSERT INTO tb_propinsi(nama, id_negara) VALUES('%s', %s);" %(nama, "1")
 	cur.execute(sql)
 	db.commit()
