@@ -2,7 +2,7 @@
 	$dbhost = '127.0.0.1';
 	$dbuser = 'root';
 	$dbpass = '';
-	$dbname = 'db_project';
+	$dbname = 'source';
 	$db = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
  
 	// Check connection

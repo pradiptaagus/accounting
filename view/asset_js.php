@@ -5,6 +5,7 @@
 <script src="../assets/js/all.js"></script>
 <script src="../assets/datatables/js/jquery.dataTables.min.js"></script>
 <script src="../assets/datatables/js/dataTables.bootstrap4.min.js"></script>
+<script src="../assets/chartjs/Chart.bundle.min.js"></script>
 <script src="../assets/autocomplete/auto-complete.min.js"></script>
 <script src="../assets/js/accounting.min.js"></script>
 <script src="../assets/toastr/toastr.min.js"></script>
